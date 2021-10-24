@@ -1,0 +1,31 @@
+
+$title_color: #1f661b;
+$small_color: #555555;
+$color: $title_color;
+$color_main: orangered;
+$size_md: 2rem;
+$size_sm_md: 1.2rem;
+$size_main: 1.4rem;
+
+.title {
+  font-size: $size_md;
+  font-weight: bolder;
+  color: $color;
+  margin: 0;
+  padding: 0;
+  text-align: left!important;
+  &.main {
+    color: $color_main;
+
+  }
+
+  small {
+    display: block;
+    margin-top: -8px;
+    font-weight: bold;
+    font-size: $size_sm_md;
+    font-style: italic;
+    color: $small_color;
+  }
+
+}

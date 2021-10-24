@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpacked</title>
+    <style>
+        .processed{
+            font-weight: bolder;
+            color: rgb(0, 0, 0);
+            opacity: 1;
+            transition: opacity ease-in-out 1s;
+        }
+        .fa-check-square {
+            color: green;
+        }
+        .working {
+            display: none;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title">Webpacked  <i class="fas fa-cannabis"></i><small>Just a simple and igorant template...</small></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col--6">
+                <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>JavaScript</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>TypeScript</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>SCSS/sass/css</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Images</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Fonts</li>
+                  </ul>            </div>
+            <div class="col--6">
+                <img src="./images/webing_logo.png" class="img-fluid" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12"><span id="js" class="processed working"><i class="fas fa-check-square"></i>&nbsp;&nbsp;JavaScript</span></div>
+            <div class="col-12"><span id="ts" class="processed working"><i class="fas fa-check-square"></i>&nbsp;&nbsp;TypeScript</span></div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+

@@ -1,0 +1,19 @@
+
+
+@use "./title";
+
+@import "~bootstrap-css-only";
+
+
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+
+body {
+    background-color: rgb(211, 211, 211);
+}
+  
+.companyLogo {
+    content: url("../images/webing_logo.png");
+}
