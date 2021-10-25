@@ -12,7 +12,7 @@ var config = {
     entry: entries.baseCode(),
     output: output.webRoot(),
     resolve: {
-        extensions: ['.js','.ts','.scss','.vue','.json'],
+        extensions: ['.js','.jsx','.ts',,'.vue','.scss','.json'],
         modules: ['node_modules'],
     },
     module: {
