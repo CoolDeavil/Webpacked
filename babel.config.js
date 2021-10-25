@@ -6,9 +6,10 @@ module.exports = {
         "@babel/preset-typescript",
         "@babel/preset-react"
     ],
-    plugins:["@vue/babel-plugin-jsx","@babel/plugin-transform-runtime"],
     overrides:[
         {
+            plugins:["@vue/babel-plugin-jsx","@babel/plugin-transform-runtime"],
+            exclude: [/node_modules/,'./assets/js/'] ,
             test: /\.vue$/,
             plugins: ["@babel/transform-typescript"]
         }

@@ -9,12 +9,15 @@ exports.buildPlugs = () => {
         new webpack.DefinePlugin({
             // 'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
             VERSION: JSON.stringify('5fa3b9'),
+            __VUE_OPTIONS_API__: true,
+            __VUE_PROD_DEVTOOLS__: false,
         }),
         new HtmlWebpackPlugin({
             title: 'DevWebPack',
             template: './assets/template/index.html',
             filename: 'index.html',
-            inject: 'head',        
+            inject: 'head',      
+            minify: false,  
         }),
         new MiniCssExtractPlugin({
             // filename: "./css/[name].[hash].css",

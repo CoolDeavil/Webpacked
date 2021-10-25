@@ -1,19 +1,83 @@
-
-
 @use "./title";
 
 @import "~bootstrap-css-only";
 
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 
-$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
-@import '~@fortawesome/fontawesome-free/scss/fontawesome';
-@import '~@fortawesome/fontawesome-free/scss/solid';
-@import '~@fortawesome/fontawesome-free/scss/regular';
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/regular";
 
 body {
-    background-color: rgb(211, 211, 211);
+  height: 100vh;
+  margin: 0;
 }
-  
+
+header {
+  min-height: 50px;
+  background: lightcyan;
+}
+footer {
+  min-height: 50px;
+  background: PapayaWhip;
+}
+
+/* Trick */
+body {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden; // hide vertical
+}
+
+footer {
+  margin-top: auto;
+}
+body {
+  font-family: Montserrat, sans-serif;
+}
 .companyLogo {
-    content: url("../images/webing_logo.png");
+  content: url("../images/bundler.png");
+}
+.react {
+  background: url(../images/react_logo.png) no-repeat;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+}
+.vue {
+  background: url(../images/Vue-logo.png) no-repeat;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+}
+
+.processed {
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+  opacity: 1;
+  transition: opacity ease-in-out 1s;
+}
+.fa-check-square {
+  color: green;
+}
+.working {
+  display: none;
+  opacity: 0;
+}
+
+.headerTitle {
+  color: #1f661b;
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+.logo {
+  height: 200px;
+  width: 200px;
+}
+
+.hrow {
+  border-bottom: solid 3px #1f661b;
 }

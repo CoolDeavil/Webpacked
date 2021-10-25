@@ -1,5 +1,7 @@
 .idea
 .vscode
+.vagrant/
+Vagrantfile
 node_modules/
 public/
 package-lock.json
