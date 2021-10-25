@@ -1,6 +1,7 @@
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const { VueLoaderPlugin } = require('vue-loader')
 
 exports.buildPlugs = () => {
     
@@ -18,6 +19,7 @@ exports.buildPlugs = () => {
         new MiniCssExtractPlugin({
             // filename: "./css/[name].[hash].css",
             filename: "./css/[name].min.css",
-          }),
+        }),
+        new VueLoaderPlugin(),
     ]
 }

@@ -7,5 +7,8 @@ exports.baseCode = () => {
         main_ts: [
             './assets/ts/main',
         ],
+        vueComponent: [
+            './assets/ts/vueComponent',
+        ],
     }
 };
