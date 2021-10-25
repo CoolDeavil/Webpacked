@@ -4,6 +4,9 @@ exports.baseCode = () => {
             './assets/js/main',
             './assets/scss/main',
         ],
+        react_demo: [
+            './assets/js/reactComponent',
+        ],
         main_ts: [
             './assets/ts/main',
         ],
