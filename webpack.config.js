@@ -57,43 +57,6 @@ var config = {
     },
     plugins: plugIns.buildPlugs(),
     optimization: {},
-    // optimization: {
-    //     minimize: true,
-    //     minimizer: [
-    //         new TerserPlugin({
-    //             test: /\.(ts|js)x?$/,
-    //             extractComments: "all",
-    //             terserOptions: {
-    //                 compress: {
-    //                     drop_console: false,
-    //                 },
-    //             },
-    //         }),
-    //         new CssMinimizerPlugin(),
-    //     ],
-    //     splitChunks: {
-    //         chunks: "all",
-    //         minSize: 0,
-    //         maxInitialRequests: 10,
-    //         maxAsyncRequests: 10,
-    //         cacheGroups: {
-    //           vendors: {
-    //             test: /[\\/]node_modules[\\/]/,
-    //             name(module, chunks, cacheGroupKey) {
-    //               const packageName = module.context.match(
-    //                 /[\\/]node_modules[\\/](.*?)([\\/]|$)/
-    //               )[1];
-    //               return `${cacheGroupKey}.${packageName.replace("@", "")}`;
-    //             }
-    //           },
-    //           common: {
-    //             minChunks: 2,
-    //             priority: -10
-    //           }
-    //         }
-    //       },
-    // },
-
     devServer: {
         port: 3000,
         compress: true,
@@ -110,20 +73,16 @@ var config = {
 
   };
 
-
-
 module.exports = ( env, argv) => {
 
     if (argv.mode === 'development') {
         config.devtool = 'source-map';
-        mode = 'development';
         console.log("Runing on Developer Mode " );
     }
   
     if (argv.mode === 'production') {
-        mode = 'production';
-        console.log("Enable Production Plugins ");
-        config.optimization = optimize() 
+        config.optimization = optimize();
+        console.log("Enabled Production Plugins ");
     }
   
     return config;
