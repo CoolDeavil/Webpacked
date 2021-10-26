@@ -5,7 +5,7 @@
   "scripts": {
     "check": "npm-check -u",
     "web": "lite-server",
-    "dev": "webpack serve --mode=development",
+    "dev": "webpack serve --mode=development --open",
     "build": "webpack --mode=development",
     "release": "webpack --mode=production"
   },
